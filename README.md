@@ -98,3 +98,9 @@ Ensure that you follow the list of [theme store requirements](https://shopify.de
 ## License
 
 Copyright (c) 2021-present Shopify Inc. See [LICENSE](/LICENSE.md) for further details.
+
+## Install Plugin
+Install extension of VS code
+- Liquid language support - Neil Ding 
+- Shopify Liquid Template Snippets - Franky Lau
+- Liquid - liquify.dev

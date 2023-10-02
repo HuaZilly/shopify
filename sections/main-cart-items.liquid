@@ -18,6 +18,8 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+ 
+
 {%- endstyle -%}
 
 {%- unless settings.cart_type == 'drawer' -%}
@@ -29,7 +31,7 @@
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+    
   </div>
 
   <div class="cart__warnings">
@@ -464,6 +466,17 @@
       {{ 'accessibility.loading' | t }}
     </p>
   </form>
+  <div class="cart-bottom">
+    <div class="cart-action">
+      <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+    </div>
+    <div class="cart-reload">
+      <button onclick="window.location.reload()" class="cart__update-button button button--secondary">
+          {{ 'sections.cart.update_button_text' | t }}
+
+      </button>
+    </div>
+  </div>
 </cart-items>
 
 {% schema %}
